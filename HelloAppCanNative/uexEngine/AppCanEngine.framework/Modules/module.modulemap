@@ -1,0 +1,6 @@
+framework module AppCanEngine {
+  umbrella header "AppCanEngine.h"
+
+  export *
+  module * { export * }
+}

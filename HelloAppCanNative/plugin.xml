@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<uexplugins>
+    <plugin name="uexFileMgr">
+        <method name="createSecure"></method>
+        <method name="openSecure"></method>
+        <method name="createFile"></method>
+        <method name="createDir"></method>
+        <method name="openFile"></method>
+        <method name="openDir"></method>
+        <method name="deleteFileByPath"></method>
+        <method name="deleteFileByID"></method>
+        <method name="getFileTypeByPath"></method>
+        <method name="getFileTypeByID"></method>
+        <method name="isFileExistByPath"></method>
+        <method name="isFileExistByID"></method>
+        <method name="explorer"></method>
+        <method name="multiExplorer"></method>
+        <method name="seekFile"></method>
+        <method name="seekBeginOfFile"></method>
+        <method name="seekEndOfFile"></method>
+        <method name="readFile"></method>
+        <method name="writeFile"></method>
+        <method name="getFileSize"></method>
+        <method name="getFileSizeByPath"></method>
+        <method name="getFilePath"></method>
+        <method name="closeFile"></method>
+        <method name="getReaderOffset"></method>
+        <method name="readPercent"></method>
+        <method name="readNext"></method>
+        <method name="readPre"></method>
+        <method name="getFileRealPath"></method>
+        <method name="getFileCreateTime"></method>
+        <method name="renameFile"></method>
+        <method name="getFileListByPath"></method>
+        <method name="search"></method>
+        <method name="copyFile"></method>
+        <method name="create"></method>
+        <method name="mkdir"></method>
+        <method name="open"></method>
+        <method name="copy"></method>
+        <method name="openWithPassword"></method>
+        <method name="createWithPassword"></method>
+        <method name="getFileHashValue"></method>
+    </plugin>
+    <plugin name="uexXmlHttpMgr">
+        <method name="open"></method>
+        <method name="send"></method>
+        <method name="setBody"></method>
+        <method name="setHeaders"></method>
+        <method name="setPostData"></method>
+        <method name="setAppVerify"></method>
+        <method name="setInputStream"></method>
+        <method name="setCertificate"></method>
+        <method name="close"></method>
+        <method name="getCookie"></method>
+        <method name="clearCookie"></method>
+        <method name="create"></method>
+    </plugin>
+</uexplugins>

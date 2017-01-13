@@ -1,0 +1,65 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F9C71982B406A3993095C319797BB3CE51F4B3AA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6DF796DA1B02B35BB78D8952E86824D016B918DA" : 9223372036854775807,
+    "E9A1AFF5442470986E7E51D19919EE5DE9B46382" : 9223372036854775807,
+    "5CDC4903BCBD0754512EC2F01AB94E23EE98600F" : 9223372036854775807,
+    "F9C71982B406A3993095C319797BB3CE51F4B3AA" : 9223372036854775807,
+    "F2FE0AAE95F0B87896F2BEE0B176D4FC32D691A3" : 9223372036854775807,
+    "9A76F17C6068412484158A754CBD274391008322" : 9223372036854775807,
+    "72F28958F834302DB6CDB5C0C5CF9A2BBB223316" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2D664E77-D52A-476F-A07B-927B97AFE40D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6DF796DA1B02B35BB78D8952E86824D016B918DA" : "appcan-ios\/",
+    "E9A1AFF5442470986E7E51D19919EE5DE9B46382" : "AppCanKit\/",
+    "5CDC4903BCBD0754512EC2F01AB94E23EE98600F" : "widgetSDK-demo\/",
+    "F9C71982B406A3993095C319797BB3CE51F4B3AA" : "HelloAppCanNative\/",
+    "F2FE0AAE95F0B87896F2BEE0B176D4FC32D691A3" : "pop\/",
+    "9A76F17C6068412484158A754CBD274391008322" : "Ono\/",
+    "72F28958F834302DB6CDB5C0C5CF9A2BBB223316" : "uexFileMgr\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "HelloAppCanNative",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "HelloAppCanNative.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ios-plugin\/widgetSDK-demo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5CDC4903BCBD0754512EC2F01AB94E23EE98600F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/AppCanOpenSource\/appcan-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6DF796DA1B02B35BB78D8952E86824D016B918DA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ios-plugin\/uexFileMgr.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "72F28958F834302DB6CDB5C0C5CF9A2BBB223316"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ios-plugin\/Ono.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9A76F17C6068412484158A754CBD274391008322"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ios-plugin\/AppCanKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E9A1AFF5442470986E7E51D19919EE5DE9B46382"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ios-plugin\/pop.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F2FE0AAE95F0B87896F2BEE0B176D4FC32D691A3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ios-plugin\/HelloAppCanNative.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F9C71982B406A3993095C319797BB3CE51F4B3AA"
+    }
+  ]
+}
