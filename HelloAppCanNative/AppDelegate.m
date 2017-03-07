@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <AppCanEngine/AppCanEngine.h>
+#import <AppCanKit/AppCanKit.h>
 #import "AppCanConfiguration.h"
 @interface AppDelegate ()
 
@@ -19,10 +20,17 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    
+    
+
+    
     [AppCanEngine initializeWithConfiguration:[AppCanConfiguration new]];
     self.window = [UIWindow new];
     self.window.rootViewController = AppCanEngine.mainWidgetController;
     [self.window makeKeyAndVisible];
+    
+    WidgetOneDelegate *theApp = (WidgetOneDelegate *)[UIApplication sharedApplication].delegate;
+    ACLogError(@"%@",theApp.useAppCanMAMURL);
     return [AppCanEngine application:application didFinishLaunchingWithOptions:launchOptions];
 }
 

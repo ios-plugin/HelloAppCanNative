@@ -148,3 +148,156 @@
 .icon-warn {
     background-image: url('icons/icon-warn.png') !important;
 }
+.icon-richeng{
+    background-image: url('icons/icon-richeng1.png') !important;
+}
+.res6{
+    background-image: url(images/icon-search-black.png);
+}
+.res7 {
+    background-image: url(images/refresh.png);
+}
+.res11
+{
+    background-image: url('images/saomiao.png');
+}
+.erwei .res11
+{
+    background-image: url('images/saomiao2.png');
+}
+.rederwei
+{
+    background-image: url('images/saomiao1.png');
+}
+.res12
+{
+    background-image: url('images/search.png');
+    height:1.3em;
+}
+.fangda .res12
+{
+    background-image: url('images/search2.png');
+    height:1.3em;
+}
+.res13
+{
+    background-image: url('images/xia.png');
+}
+.res13_h
+{
+    background-image: url('images/shang.png');
+}
+.shanghu
+{
+    background-image: url('images/shanghu.png');
+}
+.shanghu1
+{
+    background-image: url('images/shanghu1.png');
+}
+.cuxiao
+{
+    background-image: url('images/cuxiao.png');
+}
+.cuxiao1
+{
+    background-image: url('images/cuxiao1.png');
+}
+.pinglun
+{
+    background-image: url('images/pinglun.png');
+}
+.pinglun1
+{
+    background-image: url('images/pinglun1.png');
+}
+.my
+{
+    background-image: url('images/my.png');
+}
+.my1
+{
+    background-image: url('images/my1.png');
+}
+.bor
+{
+    background-image: url('images/bor.png');
+}
+.guanggao{
+    background-image: url('images/guanggao.png');
+}
+.xing-l{
+    background-image: url('images/xing-l.png');
+}
+.xing-h{
+    background-image: url('images/xing-h.png');
+}
+.yemian-bg{
+    background-image: url('images/bg.png');
+}
+.dmar{
+    padding:0 3em;
+}
+
+.canyin{
+    background-image: url('images/canyin.png');
+}
+.yule{
+    background-image: url('images/yule.png');
+}
+.yangs{
+    background-image: url('images/yangs.png');
+}
+.meirong{
+    background-image: url('images/meirong.png');
+}
+.fire{ 
+    background-image: url('images/fire.png');
+ }
+.biaoqian{
+    background-image: url('images/biaoqian.png');
+}
+.huiyuan{
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('images/Mb_card1.png');
+    height:2.3em;
+    width:2em;
+}
+.no-huiyuan{
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('images/Mb_card2.png');
+    height:2.3em;
+    width:2em;
+    
+}
+.res-huihui{
+    background-image:url('images/huihui.png');
+}
+.res-diandian{
+    background-image:url('images/diandian.png');
+}
+.res-dingding{
+    background-image:url('images/dingding.png');
+}
+.res-waiwai{
+    background-image:url('images/waiwai.png');
+}
+.res-kaka{
+    background-image:url('images/kaka.png');
+}
+.res-fufu{
+    background-image:url('images/fufu.png');
+}
+.smallIconw{
+    width:1.2em;
+    height:1.2em;
+}
+.icon-dagou{
+    background-image: url('icons/icon-dagou.png') !important;
+}

@@ -1,0 +1,53 @@
+/* login.html样式 */
+.login-bg {
+   background: #fbfbfb;
+}
+.login-defaultIcon{
+    background-image: url(../../css/img/about.png);
+}
+.login-iconStyle {
+    width: 4.5625em;
+    height: 4.5625em; 
+    border: 1px solid #e6e6e6; 
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.14);
+}
+.login-iconStyle2 {
+    width:4.3125em;
+    height: 4.3125em; 
+    border: 1px solid #e6e6e6; 
+    border-radius: 50%;    
+}
+.login-border {
+    border-color: #e6e6e6;
+}
+.login-paddRight {
+    padding-right: 1.4375em;
+}
+.login-allPadd {
+    padding: .5625em 0;
+}
+.login-allPadd2 {
+    padding: 1em 0;
+}
+.login-icon {
+    width: 1.2em;
+    height: 1.2em;
+}
+.login-icon2 {
+    width: 1.5em;
+    height: 1.5em;
+}
+.login-radius {
+   -webkit-border-radius: .15625em;
+    border-radius: .15625em ;
+}
+.login-color {
+    color: #7bb9d7;
+}
+.login-appcan {
+    bottom: 15px;
+    position: absolute; 
+    width: 100%; 
+    text-align: center;
+}

@@ -165,6 +165,9 @@ appcan.define("slider", function($, exports, module) {
             }
             
             self._moveTo(self.option.index,false);
+            self.ele.off("touchstart").on("touchstart",function(evt){
+                evt.preventDefault();
+            })
             self.ele.off("swipeMoveLeft").on("swipeMoveLeft",function(evt){
                  if(self.option.index<self.option.itemCount){
                     if(self.timer) {

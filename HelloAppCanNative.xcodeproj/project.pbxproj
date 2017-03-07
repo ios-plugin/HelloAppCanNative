@@ -7,6 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		423DBD181E693939004F8BAB /* AppCanEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F18C241E28DA1700A20E2A /* AppCanEngine.framework */; };
+		423DBD191E693939004F8BAB /* AppCanEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42F18C241E28DA1700A20E2A /* AppCanEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		423DBD1A1E693939004F8BAB /* AppCanKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F18C251E28DA1700A20E2A /* AppCanKit.framework */; };
+		423DBD1B1E693939004F8BAB /* AppCanKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42F18C251E28DA1700A20E2A /* AppCanKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		423DBD1C1E693939004F8BAB /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F18C271E28DA1700A20E2A /* pop.framework */; };
+		423DBD1D1E693939004F8BAB /* pop.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42F18C271E28DA1700A20E2A /* pop.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		423DBD1E1E693939004F8BAB /* Ono.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F18C261E28DA1700A20E2A /* Ono.framework */; };
+		423DBD1F1E693939004F8BAB /* Ono.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42F18C261E28DA1700A20E2A /* Ono.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		423DBD2C1E693DCA004F8BAB /* uexAppStoreMgr.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 423DBD251E693DCA004F8BAB /* uexAppStoreMgr.bundle */; };
+		423DBD2D1E693DCA004F8BAB /* uexControl.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 423DBD261E693DCA004F8BAB /* uexControl.bundle */; };
+		423DBD2E1E693DCA004F8BAB /* uexDataAnalysis.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 423DBD271E693DCA004F8BAB /* uexDataAnalysis.bundle */; };
+		423DBD2F1E693DCA004F8BAB /* uexEMM.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 423DBD281E693DCA004F8BAB /* uexEMM.bundle */; };
+		423DBD301E693DCA004F8BAB /* uexFileMgr.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 423DBD291E693DCA004F8BAB /* uexFileMgr.bundle */; };
+		423DBD311E693DCA004F8BAB /* uexMDM.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 423DBD2A1E693DCA004F8BAB /* uexMDM.bundle */; };
+		423DBD321E693DCA004F8BAB /* uexXmlHttpMgr.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 423DBD2B1E693DCA004F8BAB /* uexXmlHttpMgr.bundle */; };
+		423DBD3E1E693DD7004F8BAB /* libuexAppStoreMgr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 423DBD331E693DD7004F8BAB /* libuexAppStoreMgr.a */; };
+		423DBD3F1E693DD7004F8BAB /* libuexControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 423DBD341E693DD7004F8BAB /* libuexControl.a */; };
+		423DBD401E693DD7004F8BAB /* libuexDataAnalysis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 423DBD351E693DD7004F8BAB /* libuexDataAnalysis.a */; };
+		423DBD411E693DD7004F8BAB /* libuexDevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 423DBD361E693DD7004F8BAB /* libuexDevice.a */; };
+		423DBD421E693DD7004F8BAB /* libuexDownloaderMgr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 423DBD371E693DD7004F8BAB /* libuexDownloaderMgr.a */; };
+		423DBD441E693DD7004F8BAB /* libuexFileMgr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 423DBD391E693DD7004F8BAB /* libuexFileMgr.a */; };
+		423DBD451E693DD7004F8BAB /* libuexMDM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 423DBD3A1E693DD7004F8BAB /* libuexMDM.a */; };
+		423DBD461E693DD7004F8BAB /* libuexToast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 423DBD3B1E693DD7004F8BAB /* libuexToast.a */; };
+		423DBD471E693DD7004F8BAB /* libuexUploaderMgr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 423DBD3C1E693DD7004F8BAB /* libuexUploaderMgr.a */; };
+		423DBD481E693DD7004F8BAB /* libuexXmlHttpMgr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 423DBD3D1E693DD7004F8BAB /* libuexXmlHttpMgr.a */; };
+		423DBD4A1E693DE6004F8BAB /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423DBD491E693DE6004F8BAB /* AFNetworking.framework */; };
+		426F20161E6D44CA0004CB34 /* WidgetOnePseudoDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 426F20151E6D44CA0004CB34 /* WidgetOnePseudoDelegate.m */; };
+		42B3D4461E6E41FE00F215B3 /* libuexEMM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B3D4451E6E41FE00F215B3 /* libuexEMM.a */; };
+		42D44D011E6D64DC00BC0B8E /* Beqtucontent.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D44D001E6D64DC00BC0B8E /* Beqtucontent.m */; };
 		42F18B2C1E28BF6800A20E2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F18B2B1E28BF6800A20E2A /* main.m */; };
 		42F18B2F1E28BF6800A20E2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F18B2E1E28BF6800A20E2A /* AppDelegate.m */; };
 		42F18B351E28BF6800A20E2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F18B331E28BF6800A20E2A /* Main.storyboard */; };
@@ -16,19 +45,6 @@
 		42F18B571E28C06200A20E2A /* AppCanConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F18B561E28C06200A20E2A /* AppCanConfiguration.m */; };
 		42F18B5F1E28C88400A20E2A /* widget in Resources */ = {isa = PBXBuildFile; fileRef = 42F18B5E1E28C88400A20E2A /* widget */; };
 		42F18B611E28C88B00A20E2A /* plugin.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42F18B601E28C88B00A20E2A /* plugin.xml */; };
-		42F18C951E28E00200A20E2A /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F18C901E28E00200A20E2A /* AFNetworking.framework */; };
-		42F18C961E28E00200A20E2A /* libuexFileMgr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F18C911E28E00200A20E2A /* libuexFileMgr.a */; };
-		42F18C971E28E00200A20E2A /* libuexXmlHttpMgr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F18C921E28E00200A20E2A /* libuexXmlHttpMgr.a */; };
-		42F18C981E28E00200A20E2A /* uexFileMgr.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 42F18C931E28E00200A20E2A /* uexFileMgr.bundle */; };
-		42F18C991E28E00200A20E2A /* uexXmlHttpMgr.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 42F18C941E28E00200A20E2A /* uexXmlHttpMgr.bundle */; };
-		42F18C9F1E28E05500A20E2A /* AppCanEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F18C9B1E28E05500A20E2A /* AppCanEngine.framework */; };
-		42F18CA01E28E05500A20E2A /* AppCanKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F18C9C1E28E05500A20E2A /* AppCanKit.framework */; };
-		42F18CA11E28E05500A20E2A /* Ono.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F18C9D1E28E05500A20E2A /* Ono.framework */; };
-		42F18CA21E28E05500A20E2A /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F18C9E1E28E05500A20E2A /* pop.framework */; };
-		42F18CA31E28E06400A20E2A /* AppCanEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42F18C9B1E28E05500A20E2A /* AppCanEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		42F18CA41E28E06400A20E2A /* AppCanKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42F18C9C1E28E05500A20E2A /* AppCanKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		42F18CA51E28E06400A20E2A /* Ono.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42F18C9D1E28E05500A20E2A /* Ono.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		42F18CA61E28E06400A20E2A /* pop.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42F18C9E1E28E05500A20E2A /* pop.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,10 +54,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				42F18CA31E28E06400A20E2A /* AppCanEngine.framework in Embed Frameworks */,
-				42F18CA41E28E06400A20E2A /* AppCanKit.framework in Embed Frameworks */,
-				42F18CA51E28E06400A20E2A /* Ono.framework in Embed Frameworks */,
-				42F18CA61E28E06400A20E2A /* pop.framework in Embed Frameworks */,
+				423DBD1B1E693939004F8BAB /* AppCanKit.framework in Embed Frameworks */,
+				423DBD1F1E693939004F8BAB /* Ono.framework in Embed Frameworks */,
+				423DBD1D1E693939004F8BAB /* pop.framework in Embed Frameworks */,
+				423DBD191E693939004F8BAB /* AppCanEngine.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,6 +65,30 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		423DBD251E693DCA004F8BAB /* uexAppStoreMgr.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = uexAppStoreMgr.bundle; sourceTree = "<group>"; };
+		423DBD261E693DCA004F8BAB /* uexControl.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = uexControl.bundle; sourceTree = "<group>"; };
+		423DBD271E693DCA004F8BAB /* uexDataAnalysis.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = uexDataAnalysis.bundle; sourceTree = "<group>"; };
+		423DBD281E693DCA004F8BAB /* uexEMM.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = uexEMM.bundle; sourceTree = "<group>"; };
+		423DBD291E693DCA004F8BAB /* uexFileMgr.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = uexFileMgr.bundle; sourceTree = "<group>"; };
+		423DBD2A1E693DCA004F8BAB /* uexMDM.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = uexMDM.bundle; sourceTree = "<group>"; };
+		423DBD2B1E693DCA004F8BAB /* uexXmlHttpMgr.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = uexXmlHttpMgr.bundle; sourceTree = "<group>"; };
+		423DBD331E693DD7004F8BAB /* libuexAppStoreMgr.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libuexAppStoreMgr.a; sourceTree = "<group>"; };
+		423DBD341E693DD7004F8BAB /* libuexControl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libuexControl.a; sourceTree = "<group>"; };
+		423DBD351E693DD7004F8BAB /* libuexDataAnalysis.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libuexDataAnalysis.a; sourceTree = "<group>"; };
+		423DBD361E693DD7004F8BAB /* libuexDevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libuexDevice.a; sourceTree = "<group>"; };
+		423DBD371E693DD7004F8BAB /* libuexDownloaderMgr.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libuexDownloaderMgr.a; sourceTree = "<group>"; };
+		423DBD381E693DD7004F8BAB /* libuexEMM.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libuexEMM.a; sourceTree = "<group>"; };
+		423DBD391E693DD7004F8BAB /* libuexFileMgr.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libuexFileMgr.a; sourceTree = "<group>"; };
+		423DBD3A1E693DD7004F8BAB /* libuexMDM.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libuexMDM.a; sourceTree = "<group>"; };
+		423DBD3B1E693DD7004F8BAB /* libuexToast.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libuexToast.a; sourceTree = "<group>"; };
+		423DBD3C1E693DD7004F8BAB /* libuexUploaderMgr.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libuexUploaderMgr.a; sourceTree = "<group>"; };
+		423DBD3D1E693DD7004F8BAB /* libuexXmlHttpMgr.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libuexXmlHttpMgr.a; sourceTree = "<group>"; };
+		423DBD491E693DE6004F8BAB /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = "<group>"; };
+		426F20141E6D44CA0004CB34 /* WidgetOnePseudoDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidgetOnePseudoDelegate.h; sourceTree = "<group>"; };
+		426F20151E6D44CA0004CB34 /* WidgetOnePseudoDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WidgetOnePseudoDelegate.m; sourceTree = "<group>"; };
+		42B3D4451E6E41FE00F215B3 /* libuexEMM.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libuexEMM.a; path = "../ios-plugin-uexEMM/EUExEMM/uexEMM/libuexEMM.a"; sourceTree = "<group>"; };
+		42D44CFF1E6D64DC00BC0B8E /* Beqtucontent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Beqtucontent.h; sourceTree = "<group>"; };
+		42D44D001E6D64DC00BC0B8E /* Beqtucontent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Beqtucontent.m; sourceTree = "<group>"; };
 		42F18B271E28BF6800A20E2A /* HelloAppCanNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloAppCanNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42F18B2B1E28BF6800A20E2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		42F18B2D1E28BF6800A20E2A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -68,15 +108,6 @@
 		42F18C251E28DA1700A20E2A /* AppCanKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCanKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/AppCanEngine-ecbukyozlaqyzvebwalhktxntsal/Build/Products/Debug-iphoneos/AppCanKit.framework"; sourceTree = "<group>"; };
 		42F18C261E28DA1700A20E2A /* Ono.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ono.framework; path = "../../../Library/Developer/Xcode/DerivedData/AppCanEngine-ecbukyozlaqyzvebwalhktxntsal/Build/Products/Debug-iphoneos/Ono.framework"; sourceTree = "<group>"; };
 		42F18C271E28DA1700A20E2A /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pop.framework; path = "../../../Library/Developer/Xcode/DerivedData/AppCanEngine-ecbukyozlaqyzvebwalhktxntsal/Build/Products/Debug-iphoneos/pop.framework"; sourceTree = "<group>"; };
-		42F18C901E28E00200A20E2A /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = "<group>"; };
-		42F18C911E28E00200A20E2A /* libuexFileMgr.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libuexFileMgr.a; sourceTree = "<group>"; };
-		42F18C921E28E00200A20E2A /* libuexXmlHttpMgr.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libuexXmlHttpMgr.a; sourceTree = "<group>"; };
-		42F18C931E28E00200A20E2A /* uexFileMgr.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = uexFileMgr.bundle; sourceTree = "<group>"; };
-		42F18C941E28E00200A20E2A /* uexXmlHttpMgr.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = uexXmlHttpMgr.bundle; sourceTree = "<group>"; };
-		42F18C9B1E28E05500A20E2A /* AppCanEngine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCanEngine.framework; sourceTree = "<group>"; };
-		42F18C9C1E28E05500A20E2A /* AppCanKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCanKit.framework; sourceTree = "<group>"; };
-		42F18C9D1E28E05500A20E2A /* Ono.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Ono.framework; sourceTree = "<group>"; };
-		42F18C9E1E28E05500A20E2A /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = pop.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,19 +115,86 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42F18CA21E28E05500A20E2A /* pop.framework in Frameworks */,
-				42F18C971E28E00200A20E2A /* libuexXmlHttpMgr.a in Frameworks */,
-				42F18C9F1E28E05500A20E2A /* AppCanEngine.framework in Frameworks */,
-				42F18CA11E28E05500A20E2A /* Ono.framework in Frameworks */,
-				42F18C961E28E00200A20E2A /* libuexFileMgr.a in Frameworks */,
-				42F18CA01E28E05500A20E2A /* AppCanKit.framework in Frameworks */,
-				42F18C951E28E00200A20E2A /* AFNetworking.framework in Frameworks */,
+				42B3D4461E6E41FE00F215B3 /* libuexEMM.a in Frameworks */,
+				423DBD4A1E693DE6004F8BAB /* AFNetworking.framework in Frameworks */,
+				423DBD471E693DD7004F8BAB /* libuexUploaderMgr.a in Frameworks */,
+				423DBD451E693DD7004F8BAB /* libuexMDM.a in Frameworks */,
+				423DBD1E1E693939004F8BAB /* Ono.framework in Frameworks */,
+				423DBD401E693DD7004F8BAB /* libuexDataAnalysis.a in Frameworks */,
+				423DBD421E693DD7004F8BAB /* libuexDownloaderMgr.a in Frameworks */,
+				423DBD441E693DD7004F8BAB /* libuexFileMgr.a in Frameworks */,
+				423DBD181E693939004F8BAB /* AppCanEngine.framework in Frameworks */,
+				423DBD1C1E693939004F8BAB /* pop.framework in Frameworks */,
+				423DBD461E693DD7004F8BAB /* libuexToast.a in Frameworks */,
+				423DBD481E693DD7004F8BAB /* libuexXmlHttpMgr.a in Frameworks */,
+				423DBD3E1E693DD7004F8BAB /* libuexAppStoreMgr.a in Frameworks */,
+				423DBD3F1E693DD7004F8BAB /* libuexControl.a in Frameworks */,
+				423DBD411E693DD7004F8BAB /* libuexDevice.a in Frameworks */,
+				423DBD1A1E693939004F8BAB /* AppCanKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		423DBD201E693D79004F8BAB /* uexPlugins */ = {
+			isa = PBXGroup;
+			children = (
+				423DBD241E693DC0004F8BAB /* Bundles */,
+				423DBD231E693DBA004F8BAB /* Static Libs */,
+				423DBD221E693D8A004F8BAB /* Static Frameworks */,
+				423DBD211E693D83004F8BAB /* Dynamic Frameworks */,
+			);
+			path = uexPlugins;
+			sourceTree = "<group>";
+		};
+		423DBD211E693D83004F8BAB /* Dynamic Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Dynamic Frameworks";
+			sourceTree = "<group>";
+		};
+		423DBD221E693D8A004F8BAB /* Static Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				423DBD491E693DE6004F8BAB /* AFNetworking.framework */,
+			);
+			name = "Static Frameworks";
+			sourceTree = "<group>";
+		};
+		423DBD231E693DBA004F8BAB /* Static Libs */ = {
+			isa = PBXGroup;
+			children = (
+				423DBD331E693DD7004F8BAB /* libuexAppStoreMgr.a */,
+				423DBD341E693DD7004F8BAB /* libuexControl.a */,
+				423DBD351E693DD7004F8BAB /* libuexDataAnalysis.a */,
+				423DBD361E693DD7004F8BAB /* libuexDevice.a */,
+				423DBD371E693DD7004F8BAB /* libuexDownloaderMgr.a */,
+				423DBD381E693DD7004F8BAB /* libuexEMM.a */,
+				423DBD391E693DD7004F8BAB /* libuexFileMgr.a */,
+				423DBD3A1E693DD7004F8BAB /* libuexMDM.a */,
+				423DBD3B1E693DD7004F8BAB /* libuexToast.a */,
+				423DBD3C1E693DD7004F8BAB /* libuexUploaderMgr.a */,
+				423DBD3D1E693DD7004F8BAB /* libuexXmlHttpMgr.a */,
+			);
+			name = "Static Libs";
+			sourceTree = "<group>";
+		};
+		423DBD241E693DC0004F8BAB /* Bundles */ = {
+			isa = PBXGroup;
+			children = (
+				423DBD251E693DCA004F8BAB /* uexAppStoreMgr.bundle */,
+				423DBD261E693DCA004F8BAB /* uexControl.bundle */,
+				423DBD271E693DCA004F8BAB /* uexDataAnalysis.bundle */,
+				423DBD281E693DCA004F8BAB /* uexEMM.bundle */,
+				423DBD291E693DCA004F8BAB /* uexFileMgr.bundle */,
+				423DBD2A1E693DCA004F8BAB /* uexMDM.bundle */,
+				423DBD2B1E693DCA004F8BAB /* uexXmlHttpMgr.bundle */,
+			);
+			name = Bundles;
+			sourceTree = "<group>";
+		};
 		42F18B1E1E28BF6800A20E2A = {
 			isa = PBXGroup;
 			children = (
@@ -117,8 +215,12 @@
 		42F18B291E28BF6800A20E2A /* HelloAppCanNative */ = {
 			isa = PBXGroup;
 			children = (
+				42D44CFF1E6D64DC00BC0B8E /* Beqtucontent.h */,
+				42D44D001E6D64DC00BC0B8E /* Beqtucontent.m */,
+				426F20141E6D44CA0004CB34 /* WidgetOnePseudoDelegate.h */,
+				426F20151E6D44CA0004CB34 /* WidgetOnePseudoDelegate.m */,
 				42F18C9A1E28E05500A20E2A /* uexEngine */,
-				42F18B591E28C7C300A20E2A /* uexPlugins */,
+				423DBD201E693D79004F8BAB /* uexPlugins */,
 				42F18B411E28BFC900A20E2A /* ViewController.h */,
 				42F18B421E28BFC900A20E2A /* ViewController.m */,
 				42F18B2D1E28BF6800A20E2A /* AppDelegate.h */,
@@ -144,21 +246,10 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		42F18B591E28C7C300A20E2A /* uexPlugins */ = {
-			isa = PBXGroup;
-			children = (
-				42F18C901E28E00200A20E2A /* AFNetworking.framework */,
-				42F18C911E28E00200A20E2A /* libuexFileMgr.a */,
-				42F18C921E28E00200A20E2A /* libuexXmlHttpMgr.a */,
-				42F18C931E28E00200A20E2A /* uexFileMgr.bundle */,
-				42F18C941E28E00200A20E2A /* uexXmlHttpMgr.bundle */,
-			);
-			path = uexPlugins;
-			sourceTree = "<group>";
-		};
 		42F18C0D1E28D79100A20E2A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				42B3D4451E6E41FE00F215B3 /* libuexEMM.a */,
 				42F18C241E28DA1700A20E2A /* AppCanEngine.framework */,
 				42F18C251E28DA1700A20E2A /* AppCanKit.framework */,
 				42F18C261E28DA1700A20E2A /* Ono.framework */,
@@ -171,10 +262,6 @@
 		42F18C9A1E28E05500A20E2A /* uexEngine */ = {
 			isa = PBXGroup;
 			children = (
-				42F18C9B1E28E05500A20E2A /* AppCanEngine.framework */,
-				42F18C9C1E28E05500A20E2A /* AppCanKit.framework */,
-				42F18C9D1E28E05500A20E2A /* Ono.framework */,
-				42F18C9E1E28E05500A20E2A /* pop.framework */,
 			);
 			path = uexEngine;
 			sourceTree = "<group>";
@@ -239,13 +326,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42F18C991E28E00200A20E2A /* uexXmlHttpMgr.bundle in Resources */,
+				423DBD2F1E693DCA004F8BAB /* uexEMM.bundle in Resources */,
 				42F18B5F1E28C88400A20E2A /* widget in Resources */,
+				423DBD2C1E693DCA004F8BAB /* uexAppStoreMgr.bundle in Resources */,
 				42F18B3A1E28BF6800A20E2A /* LaunchScreen.storyboard in Resources */,
 				42F18B371E28BF6800A20E2A /* Assets.xcassets in Resources */,
-				42F18C981E28E00200A20E2A /* uexFileMgr.bundle in Resources */,
 				42F18B611E28C88B00A20E2A /* plugin.xml in Resources */,
 				42F18B351E28BF6800A20E2A /* Main.storyboard in Resources */,
+				423DBD311E693DCA004F8BAB /* uexMDM.bundle in Resources */,
+				423DBD2E1E693DCA004F8BAB /* uexDataAnalysis.bundle in Resources */,
+				423DBD321E693DCA004F8BAB /* uexXmlHttpMgr.bundle in Resources */,
+				423DBD2D1E693DCA004F8BAB /* uexControl.bundle in Resources */,
+				423DBD301E693DCA004F8BAB /* uexFileMgr.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +352,8 @@
 				42F18B2F1E28BF6800A20E2A /* AppDelegate.m in Sources */,
 				42F18B2C1E28BF6800A20E2A /* main.m in Sources */,
 				42F18B571E28C06200A20E2A /* AppCanConfiguration.m in Sources */,
+				426F20161E6D44CA0004CB34 /* WidgetOnePseudoDelegate.m in Sources */,
+				42D44D011E6D64DC00BC0B8E /* Beqtucontent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

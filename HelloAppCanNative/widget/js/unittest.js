@@ -16,14 +16,6 @@ var UNIT_TEST = {
         success : 0,
         error : 0
     },
-    assertDelay:function (a,b) {
-        if (!b){
-            b = 1000;
-        }
-        setTimeout(function(){
-                   UNIT_TEST.assert(a);
-                   },b);
-    },
     assert : function(a) {
         var self = this;
         a ? (this.result.success++) : (this.result.error++);
@@ -34,13 +26,12 @@ var UNIT_TEST = {
         }
         console.log(JSON.stringify(item));
         this.result.caseresult.push(item);
-        var out = $("<div style='color:"+(item.result?"black":"red")+"'></div><br>");
+        var out = $("<div style='color:" + (item.result ? "black" : "red") + "'></div><br>");
         out.text("CASE " + item.name + "  " + item.item + "  " + (item.result ? "成功" : "失败"));
         this.dom.append(out);
-        scrollToEnd();
-        setTimeout(function(){
-            self.trigger("_NEXTCASE", "");    
-        },100);
+        setTimeout(function() {
+            self.trigger("_NEXTCASE", "");
+        }, 100);
     },
     assertString : function(a) {
         var out = $("<pre>" + a + "</pre>");
@@ -59,13 +50,14 @@ var UNIT_TEST = {
     assertNotEqual : function(a, b) {
         this.assert(a != b);
     },
-    log:function(str){
+    log : function(str) {
         var out = $("<div></div>");
         out.text("LOG: " + str);
         this.dom.append(out);
-        scrollToEnd()
-    }
-    ,
+    },
+    dom : function() {
+        return this.dom;
+    },
     _summary : function() {
         var out = $("<div></div>");
         out.text("CASE 成功 " + this.result.success);
@@ -84,22 +76,18 @@ var UNIT_TEST = {
                     return;
                 }
                 self.testcase = self.units.shift();
-                var out = $("<div style='color:blue'> " + self.testcase.name +" "+ self.testcase.item + ":START CASE </div>");
+                var out = $("<div style='color:blue'> " + self.testcase.name + self.testcase.item + ":START CASE </div>");
                 self.dom.append(out);
                 self.testcase.run();
             } catch(e) {
                 var out = $("<div style='color:red'>" + self.testcase.name + self.testcase.item + ":" + e.message + "</div>");
                 self.dom.append(out);
-                UNIT_TEST.assert(false);
             }
         });
         this.trigger("_NEXTCASE", "");
     }
 }
 
-function scrollToEnd() {
-    document.getElementById("end").scrollIntoView();
-}
 _.extend(UNIT_TEST, Backbone.Events);
 UNIT_TEST.on("assertRaise", function(err, data) {
 })

@@ -1,77 +1,169 @@
-/*****************************************/
-/*基础header颜色*/
-.bc-head {
-    background-color: #00A1EA;
+/*应用程序主色*/
+.color-primary {
+    color: #25a1fc;
 }
-/*****************************************/
+
+.bg-color-primary {
+    background-color: #25a1fc;
+}
+
+/*白色*/
+.color-white{
+    color: #FFFFFF;
+}
+
+.bg-color-white{
+    background-color: #FFFFFF;
+}
+
+/*绿*/
+.color-green {
+    color: #83c81c;
+}
+
+.bg-color-green {
+    background-color: #83c81c;
+}
+
+/*暗黄*/
+.color-yellow-dark {
+    color: #fab433;
+}
+
+.bg-color-yellow-dark {
+    background-color: #fab433;
+}
+
+/*粉红*/
+.color-pink {
+    color: #f95d62;
+}
+
+.bg-color-pink {
+    background-color: #f95d62;
+}
+
+/*浅灰*/
+.color-grey-light {
+    color: #efeff4;
+}
+
+.bg-color-grey-light {
+    background-color: #efeff4;
+}
+
+/*灰*/
+.color-grey {
+    color: #e6e6e6;
+}
+
+.bg-color-grey {
+    background-color: #e6e6e6;
+}
+
+/*深灰*/
+.color-grey-dark {
+    color: #888888;
+}
+
+.bg-color-grey-dark {
+    background-color: #888888;
+}
+
 /*基础body背景颜色*/
 .bc-bg {
-    background-color: #EEEEEE;
+    background-color: #efeff4;
 }
+
 /*辅助控件背景颜色*/
 .sc-bg {
     background-color: #EEEEEE;
 }
+
 /*辅助控件背景颜色*/
 .sc-bg-active {
     background-color: #DFDFDF;
 }
+
 /*警告背景色*/
 .sc-bg-alert {
     background-color: #F16412;
 }
+
 /*****************************************/
 /*基础字体颜色*/
 .bc-text {
     color: black;
 }
+
 /*基础标题字体颜色*/
 .bc-text-head {
     color: white;
 }
+
 /*辅助字体颜色*/
 .sc-text {
     color: #848484;
 }
+
 /*辅助字体颜色*/
 .sc-text-active {
     color: #00A1EA !important;
 }
+
 /*辅助字体颜色*/
 .sc-text-hint {
     color: #E3E3E3;
 }
+
 /*辅助字体颜色*/
 .sc-text-warn {
     color: #FC7800;
 }
+
 /*辅助字体颜色*/
 .sc-text-tab {
-    color: #636363;
+    /*color: #636363;*/
+    color: #9C9C9C;
 }
+
 /*****************************************/
 /*基础边框颜色*/
 .bc-border {
     border-color: #BABABA;
 }
+
 /*辅助边框颜色*/
 .sc-border {
     border-color: #FFFFFF;
 }
+
 .sc-border-tab {
     border-color: #00A1EA;
 }
+
 /*****************************************/
 /*基础按钮颜色*/
 .bc-btn {
     background-color: #007DB8;
 }
+
 /*辅助按钮颜色*/
 .sc-btn {
     background-color: #00A1EA;
 }
 
+.color-red {
+    color: red;
+}
 
+.color-grey {
+    color: #9C9C9C;
+}
+
+.bg-color-warning {
+    background-color: #FFEEEE;
+}
 
 
 

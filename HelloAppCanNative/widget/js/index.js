@@ -1,19 +1,25 @@
-/*Auto generate by UI designer */
 (function($) {
-    appcan.button("#nav-left", "btn-act", function() {
-    });
-    appcan.button("#nav-right", "btn-act", function() {
-    });
+    appcan.button("#nav-left", "btn-act",
+    function() {});
+    appcan.button("#nav-right", "btn-act",
+    function() {});
+
+    appcan.ready(function() {
+        $.scrollbox($("body")).on("releaseToReload",
+        function() { //After Release or call reload function,we reset the bounce
+            $("#ScrollContent").trigger("reload", this);
+        }).on("onReloading",
+        function(a) { //if onreloading status, drag will trigger this event
+        }).on("dragToReload",
+        function() { //drag over 30% of bounce height,will trigger this event
+        }).on("draging",
+        function(status) { //on draging, this event will be triggered.
+        }).on("release",
+        function() { //on draging, this event will be triggered.
+        }).on("scrollbottom",
+        function() { //on scroll bottom,this event will be triggered.you should get data from server
+            $("#ScrollContent").trigger("more", this);
+        }).reload();
+    })
 
 })($);
-
-function openTestCase(plugin){
-    appcan.window.open("case", "case/unittest.html?"+plugin, 1);
-}
-function openManualTest(type, name){
-    if(type == 0){
-        uexWindow.open(name, 0, name + ".html",0,0,0,0);
-    }else{
-        uexWindow.open(name, 0, "case/manualtest/" + name + "/index.html",0,0,0,0);
-    }
-}

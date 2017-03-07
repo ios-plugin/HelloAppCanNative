@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/fonts/iconfont.css">
+    <link rel="stylesheet" href="css/ui-box.css">
+    <link rel="stylesheet" href="css/ui-base.css">
+    <link rel="stylesheet" href="css/ui-color.css">
+    <link rel="stylesheet" href="css/appcan.icon.css">
+    <link rel="stylesheet" href="css/appcan.control.css">
+    <link rel="stylesheet" href="css/own-common.css">
+</head>
+<body class="">
+<div id="page_0" class="bc-bg" data-control="PAGE">
+
+    <!--header结束--><!--content开始-->
+    <div id="content" data-control="CONTENT" class="ios-content">
+        <div id="scrollBox" class="" data-control="ScrollBOX" data-bounce="1">
+            <div data-control="BounceBox">
+
+                <!--下拉刷新控件-->
+                <div class="box_bounce ub ub-ver ub-pc">
+                    <div class="ub-f1"></div>
+                    <!--正在下拉-->
+                    <div id="draging" class="bounce_status draging"></div>
+                    <!--触发下拉刷新的界限-->
+                    <div id="dragToReload" class="bounce_status reload"></div>
+                    <!--下拉刷新回调触发后-->
+                    <div id="releaseToReload" class="bounce_status loading"></div>
+                </div>
+
+                <!--内容区域-->
+                <div class="ub ub-ver" id="applist">
+                    <ul></ul>
+                </div>
+                <div class="uinn ub ub-f1 tx-c ulev ub-ac ub-pc uhide" id="norecord">
+                    <div class="ub ub-ver ub-ac ub-pc">
+                        <div class="Nodata ub-img Nodatastyle Nodatamargin"></div>
+                        <div class="fontSize1 baseColor8" data-lan="STR_NODATA">
+                            暂无数据
+                        </div>
+                    </div>
+                </div>
+                <!--内容区域结束-->
+
+            </div>
+        </div>
+    </div>
+    <!--content结束-->
+
+</div>
+<script src="js/appcan.js"></script>
+<script src="js/appcan.control.js"></script>
+<script src="js/appcan.scrollbox.js"></script>
+<script src="js/language.js"></script>
+<script src="js/common.js"></script>
+<script src="js/global.js"></script>
+<script src="assets/services/appManage.js"></script>
+<script src="assets/models/appManage.js"></script>
+<script src="assets/views/appManage_content.js"></script>
+</body>
+</html>

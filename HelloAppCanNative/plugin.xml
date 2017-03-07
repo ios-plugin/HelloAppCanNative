@@ -40,7 +40,6 @@
         <method name="copy"></method>
         <method name="openWithPassword"></method>
         <method name="createWithPassword"></method>
-        <method name="getFileHashValue"></method>
     </plugin>
     <plugin name="uexXmlHttpMgr">
         <method name="open"></method>
@@ -55,5 +54,118 @@
         <method name="getCookie"></method>
         <method name="clearCookie"></method>
         <method name="create"></method>
+    </plugin>
+    <plugin name="uexDownloaderMgr">
+        <method name="createDownloader"></method>
+        <method name="download"></method>
+        <method name="closeDownloader"></method>
+        <method name="getInfo"></method>
+        <method name="setHeaders"></method>
+        <method name="cancelDownload"></method>
+        <method name="setDebugMode"></method>
+        <method name="create"></method>
+    </plugin>
+    <plugin name="uexUploaderMgr">
+        <method name="setHeaders"></method>
+        <method name="createUploader"></method>
+        <method name="closeUploader"></method>
+        <method name="uploadFile"></method>
+        <method name="appendFileData"></method>
+        <method name="startUploader"></method>
+        <method name="getInfo"></method>
+        <method name="observeUploader"></method>
+        <method name="setDebugMode"></method>
+        <method name="create"></method>
+    </plugin>
+    <plugin name="uexDevice">
+        <method name="getInfo" sync="true"></method>
+        <method name="vibrate"></method>
+        <method name="cancelVibrate"></method>
+        <method name="screenCapture"></method>
+        <method name="setVolume"></method>
+        <method name="getVolume" sync="true"></method>
+        <method name="setScreenAlwaysBright"></method>
+        <method name="setScreenBrightness"></method>
+        <method name="openWiFiInterface"></method>
+        <method name="getScreenBrightness" sync="true"></method>
+        <method name="isFunctionEnable"></method>
+        <method name="openSetting"></method>
+    </plugin>
+    <plugin name="uexAppStoreMgr">
+        <method name="open"></method>
+        <method name="setStoreFrame"></method>
+        <method name="enterAppStore"></method>
+        <method name="closeAppStore"></method>
+        <method name="getMyApps"></method>
+        <method name="deleteMyApps"></method>
+        <method name="setKeyAndValue"></method>
+        <method name="searchApp"></method>
+        <method name="closeWebView"></method>
+        <method name="openAppDetail"></method>
+        <method name="loadWidget"></method>
+        <method name="getSoftToken"></method>
+        <method name="close"></method>
+        <method name="openSubAppMgr"></method>
+        <method name="closeSubAppMgr"></method>
+        <method name="openMoreTiles"></method>
+        <method name="closeMoreTiles"></method>
+        <method name="refreshTiles"></method>
+        <method name="closeTilesHomePage"></method>
+        <method name="setOption"></method>
+        <method name="getAppList"></method>
+        <method name="setUserInfo"></method>
+        <method name="getAppStoreHost"></method>
+        <method name="getTiles"></method>
+        <method name="getAppVersionInfo"></method>
+        <method name="submitAppEvalute"></method>
+        <method name="getAppEvalute"></method>
+    </plugin>
+    <plugin name="uexDataAnalysis">
+        <method name="startEveryReport"></method>
+        <method name="setEvent"></method>
+        <method name="beginEvent"></method>
+        <method name="endEvent"></method>
+        <method name="setErrorReport"></method>
+        <method name="setTenantId"></method>
+        <method name="SetAnalyticsOptions"></method>
+    </plugin>
+    <plugin name="uexEMM">
+        <method name="initEMM"></method>
+        <method name="getEMMHost"></method>
+        <method name="getLoginProperty"></method>
+        <method name="login"></method>
+        <method name="ssoLogin"></method>
+        <method name="bindUserRelation"></method>
+        <method name="validateCode"></method>
+        <method name="boundOtherInfo"></method>
+        <method name="validateBindCode"></method>
+        <method name="getVerificationImage"></method>
+        <method name="logout"></method>
+        <method name="setEvent"></method>
+        <method name="beginEvent"></method>
+        <method name="endEvent"></method>
+        <method name="updateParams"></method>
+        <method name="getDisablePlugins"></method>
+        <method name="getDisableWindows"></method>
+        <method name="getAccessToken"></method>
+        <method name="removeAcessToken"></method>
+        <method name="fileEncrypt"></method>
+        <method name="fileDecrypt"></method>
+        <method name="getWidgetInfo"></method>
+        <method name="getWidgetReportResult"></method>
+        <method name="getSoftToken"></method>
+        <method name="changePassword"></method>
+        <method name="queryUserCertFile"></method>
+        <method name="regist"></method>
+        <method name="widgetStartReport"></method>
+        <method name="setErrorReport"></method>
+        <method name="getTenantAccount"></method>
+        <method name="setEMMHost"></method>
+    </plugin>
+    <plugin name="uexToast">
+        <method name="open"></method>
+        <method name="updateLoading"></method>
+        <method name="openLoading"></method>
+        <method name="close"></method>
     </plugin>
 </uexplugins>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/fonts/iconfont.css">
+    <link rel="stylesheet" href="css/ui-box.css">
+    <link rel="stylesheet" href="css/ui-base.css">
+    <link rel="stylesheet" href="css/ui-color.css">
+    <link rel="stylesheet" href="css/appcan.icon.css">
+    <link rel="stylesheet" href="css/appcan.control.css">
+    <link rel="stylesheet" href="css/own-common.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body class="">
+<div id="page_0" class="bg-wh" style="min-height: 100%">
+    <!--内容区域-->
+    <div class="up ub ub-ver bg-wh">
+
+        <div class="ub-f1 tx-l">
+            <div class="ub ub-ac ub-pc all-padd8">
+                <div class="ub ub-ac ub-pc login-iconStyle">
+                    <div class="ub ub-img login-defaultIcon login-iconStyle2"></div>
+                </div>
+            </div>
+            <form id="login">
+                <div class="" id="loginform">
+                    <div class="ubt ubb login-border login-bg">
+                        <div class="ub login-border ubb marginRight marginLeft">
+                            <div class="ub-ac ub login-paddRight">
+                                <i class="iconfont icon-zhanghaoguanli-copy color-grey font-size-1-5em"></i>
+                            </div>
+                            <div class="uinput ub ub-f1 login-allPadd">
+                                <input placeholder="请输入帐号" data-lan="STR_PLACEHOLDER_ENTER_ACCOUNT" type="text"
+                                       id="username" value="chenxue"
+                                       class="ub-f1 fontSize" autocapitalize="off">
+                            </div>
+                        </div>
+                        <div class="ub marginRight marginLeft">
+                            <div class="ub-ac ub login-paddRight">
+                                <i class="iconfont icon-mima color-grey font-size-1-5em"></i>
+                            </div>
+                            <div class="uinput ub ub-f1 login-allPadd">
+                                <input placeholder="请输入密码" data-lan="STR_PLACEHOLDER_ENTER_PWD" type="password" value="1"
+                                       id="password" class="ub-f1 fontSize">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ub marginRight marginLeft ub-ac login-allPadd2 pswCheck">
+                        <div class="ub ub-ac ub-pc check1">
+                            <div class="icon-box-small bg-color-grey-light"></div>
+                        </div>
+                        <div class="ub ub-ac ub-pc check2 uhide">
+                            <div class="icon-box-small bg-color-primary">
+                                <i class="iconfont color-white font-size-icon-micro">&#xe63c;</i>
+                            </div>
+                        </div>
+
+                        <div class="ub t-c fontSize2 paddLeft2" data-lan="STR_LOGIN_REMEMBER_PWD">
+                            记住密码
+                        </div>
+                    </div>
+
+                    <input id="domainName" type="hidden"/>
+                    <div class="uinn2">
+                        <div class="btnlogin ub ub-ac ub-pc bg-color-primary baseColor12 login-radius"
+                             data-lan="STR_LOGIN_IN"
+                             id="btn">
+                            登录
+                        </div>
+                    </div>
+                    
+                </div>
+                <button type="submit" class="uinvisible"></button>
+            </form>
+        </div>
+
+    </div>
+    <!--内容区域结束-->
+    <div class="ub ub-ac ub-pc baseColor fontSize6 bot-margin2 bg-wh login-appcan">
+        <div class="">Powered by AppCan</div>
+    </div>
+</div>
+<script src="js/appcan.js"></script>
+<script src="js/appcan.control.js"></script>
+<script src="js/appcan.scrollbox.js"></script>
+<script src="js/language.js"></script>
+<script src="js/common.js"></script>
+<script src="js/global.js"></script>
+<script src="assets/models/login.js"></script>
+<script src="assets/views/login_content.js"></script>
+<script src="js/login.js"></script>
+</body>
+<script>
+    appcan.ready(function () {
+        try {
+            if (uexWindow.setStatusBarTitleColor) {
+                uexWindow.setStatusBarTitleColor(1)
+            }
+
+            loginViewInstance.getProperty();
+            uexEMM.initEMM();
+
+            document.documentElement.style.webkitTouchCallout = 'none';
+            
+
+            appcan.window.subscribe("loginSucc", function () {
+                if (uexWindow.setStatusBarTitleColor) uexWindow.setStatusBarTitleColor(0);
+                appcan.window.close(0);
+            });
+
+            appcan.window.subscribe("EMM_REPORT_COMPLETE", function (d) {
+                appcan.window.closeToast();
+                var data = JSON.parse(d);
+
+                if ((data.status == 'ok')) {
+                } else {
+                    var info1 = data.info && (data.info.errorInfo ? data.info.errorInfo : data.info);
+                    if (info1) {
+                        appcan.window.openToast(info1, 1500, 5);
+                    }
+                }
+                //获取登录属性
+                loginViewInstance.getProperty();
+            });
+
+            //监听返回键
+            uexWindow.onKeyPressed = function (keyCode) {
+                if (keyCode == '0') {
+                    uexWidget.finishWidget('');
+                }
+            };
+            uexWindow.setReportKey('0', '1');
+
+            /**
+             *  初始化下拉刷新
+             */
+            initPullDownRefresh(
+                //下拉刷新的回调
+                function () {
+                    log("下拉刷新");
+                    endPullDownRefreshLately();
+                }
+                //上拉到底部的回调
+                , function () {
+                    log("上拉加载");
+                }
+                //是否显示提示语
+                , true
+            );
+
+        } catch (e) {
+            errorDetail(e);
+        }
+    });
+
+
+
+</script>
+</html>

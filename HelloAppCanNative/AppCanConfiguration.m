@@ -31,50 +31,6 @@
     return @"widget";
 }
 
-- (NSString *)documentWidgetPath{
-    return @"";
-}
-- (NSString *)useBindUserPushURL{
-    return @"";
-}
-- (NSString *)useCertificatePassWord{
-    return @"";
-}
-- (NSString *)useAppCanEMMTenantID{
-    return @"";
-}
-- (BOOL)useInAppCanIDE{
-    return NO;
-}
-
-- (BOOL)userStartReport{
-    return NO;
-}
--(BOOL)useUpdateControl{
-    return NO;
-}
-- (BOOL)usePushControl{
-    return NO;
-}
-- (BOOL)useDataStatisticsControl{
-    return NO;
-}
-- (BOOL)useRC4EncryptWithLocalstorage{
-    return NO;
-}
-- (BOOL)useCertificateControl{
-    return NO;
-}
-- (BOOL)useUpdateWgtHtmlControl{
-    return NO;
-}
-- (BOOL)validatesSecureCertificate{
-    return NO;
-}
-- (BOOL)useCloseAppWithJaibroken{
-    return NO;
-}
-
 
 
 @end

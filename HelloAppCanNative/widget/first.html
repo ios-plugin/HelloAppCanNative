@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/fonts/iconfont.css">
+    <link rel="stylesheet" href="css/ui-box.css">
+    <link rel="stylesheet" href="css/ui-base.css">
+    <link rel="stylesheet" href="css/ui-color.css">
+    <link rel="stylesheet" href="css/appcan.icon.css">
+    <link rel="stylesheet" href="css/appcan.control.css">
+    <link rel="stylesheet" href="css/own-common.css">
+</head>
+<body class="um-vp bg-wh" ontouchstart>
+<div id="page_0" class="up ub ub-ver bg-first ub-img7" tabindex="0">
+
+    <!--content开始-->
+    <div id="content" class="ub-f1 tx-l"></div>
+    <!--content结束-->
+
+</div>
+<script src="js/appcan.js"></script>
+<script src="js/appcan.control.js"></script>
+<script src="js/language.js"></script>
+<script src="js/common.js"></script>
+</body>
+<script>
+
+    //插件加载完毕的回调
+    appcan.ready(function () {
+
+        try {
+
+            //初始化在App运行时只初始化一次的东西
+            initOnlyOnceDuringApp();
+            appcan.window.open("login", "login.html", 10);//打开登录页
+            
+            //TODO
+            /**
+             * -------------------------------EMM 回调注册--------------------------------
+             */
+
+            /**
+             * 插件初始化的回调【must root】
+             */
+            uexEMM.cbInitEMM = function (opId, dataType, data) {
+                log("uexEMM.cbInitEMM 插件初始化的回调 data = " + data);
+            };
+
+            /**
+             * 启动上报完成的回调【must root】
+             */
+            uexEMM.onStartReportComplete = function (opId, dataType, data) {
+                log("uexEMM.onStartReportComplete 启动上报完成的回调 opId = " + opId + " data = " + data);
+
+                //获取启动上报返回信息
+                uexEMM.getWidgetReportResult();
+               
+                appcan.window.publish("EMM_REPORT_COMPLETE", data);
+            };
+
+            /**
+             * 应用第一次启动时的回调【must root】
+             */
+            uexEMM.onAppFirstStart = function (opId, dataType, data) {
+                log("uexEMM.onAppFirstStart 应用第一次启动时的回调 data = " + data);
+
+            };
+
+            /**
+             * 当前应用升级补丁包完成后的回调【must root】
+             */
+            uexEMM.onWidgetPatchUpdate = function (opId, dataType, data) {
+                log("uexEMM.onWidgetPatchUpdate 当前应用升级补丁包完成后的回调 data = " + data);
+            };
+
+
+            /**
+             * 获取启动上报信息的回调
+             */
+            uexEMM.cbGetWidgetReportResult = function (opId, dataType, data) {
+                log("uexEMM.cbGetWidgetReportResult 获取启动上报信息的回调 data = " + data);
+            };
+
+        } catch (e) {
+            errorDetail(e);
+        }
+
+    });
+
+    /**
+     * 初始化在App运行期间只初始化一次的方法
+     */
+    function initOnlyOnceDuringApp() {
+
+        try {
+
+            /**
+             * 获得语言
+             */
+            var language = localStorage['LANGUAGE'];
+            log('本地language = ' + language);
+
+
+            /**
+             * 显示状态栏
+             */
+            if (uexWindow.showStatusBar) {
+                uexWindow.showStatusBar();
+            }
+
+            /**
+             * Android要设置手势的灵敏度
+             */
+            if (isAndroid) {
+                uexWindow.setSwipeRate(100);//设置左右手势的灵敏度，这里的数值是速度，越大越不容易触发
+            }
+
+            /**
+             * 解决iOS 9下长按屏幕会出现放大镜的问题
+             */
+            uexWindow.disturbLongPressGesture(1);
+
+            /**
+             * 监听返回键
+             */
+            uexWindow.onKeyPressed = function (keyCode) {
+                if (keyCode == '0') {
+                    uexWidget.finishWidget('');
+                }
+            };
+            uexWindow.setReportKey('0', '1');//设置当前页面是否拦截某个按键
+
+        } catch (e) {
+            errorDetail(e);
+        }
+    }
+
+</script>
+</html>
