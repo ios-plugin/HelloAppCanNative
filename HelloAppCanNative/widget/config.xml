@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><widget appId="11611176" channelCode="0000" height="480" pid="" sreensize="4.5" version="00.00.0001" viewmode="application" widgetId="" width="320"> 
+<?xml version="1.0" encoding="utf-8"?>
+
+<widget appId="11611176" channelCode="0000" height="480" pid="" sreensize="4.5" version="00.00.0000" viewmode="application" widgetId="" width="320"> 
   <name>主应用</name>  
   <!--沉浸式状态栏-->  
   <!--<statusbar color="#0025a1fc"/>-->  
@@ -14,36 +16,35 @@
   <bgcolor>#efeff4</bgcolor>  
   <orientation>1</orientation>  
   <config desc="whiteList" type="AUTHORITY"> 
-    <permission info="urlSchemeWhiteList" platform="iOS"/> 
+    <permission info="urlSchemeWhiteList" platform="iOS"></permission> 
   </config>  
   <partobfuscation>false</partobfuscation>  
   <AutoStartReport>true</AutoStartReport>  
   <webapp/>  
   <!--log服务器配置-->  
-  <logserverip/>  
+  <logserverip>192.168.2.22</logserverip>  
   <!--EMM配置-->  
-  <EMMConfig AutoStartReport="true" IsExitApp="false"/>  
+  <EMMConfig IsExitApp="false" AutoStartReport="true"></EMMConfig>  
   <!--iOS10权限-->  
   <config desc="privacyConfig" type="AUTHORITY"> 
-    <permission info="privacy" platform="iOS" type="locationWhenInUse"> 
+    <permission platform="iOS" info="privacy" type="locationWhenInUse"> 
       <string>方便为您提供位置信息的功能。</string> 
     </permission>  
-    <permission info="privacy" platform="iOS" type="locationAlways"> 
+    <permission platform="iOS" info="privacy" type="locationAlways"> 
       <string>方便为您应用切换后台还能保持服务。</string> 
     </permission>  
-    <permission info="privacy" platform="iOS" type="camera"> 
+    <permission platform="iOS" info="privacy" type="camera"> 
       <string>方便为您提供拍照、摄像功能。</string> 
     </permission>  
-    <permission info="privacy" platform="iOS" type="microphone"> 
+    <permission platform="iOS" info="privacy" type="microphone"> 
       <string>方便为您提供麦克风、语音录制功能。</string> 
     </permission>  
-    <permission info="privacy" platform="iOS" type="photoLibrary"> 
+    <permission platform="iOS" info="privacy" type="photoLibrary"> 
       <string>方便为您提供发送及保存图片功能。</string> 
     </permission> 
   </config>  
   <!--推送配置 - 根据Apple的要求,在iOS10系统上使用推送功能需要进行配置-->  
   <config desc="" type="ENTITLEMENTS"> 
     <entitlement type="apns"/> 
-  </config>  
-  <debug>false</debug>
-<fullscreen>false</fullscreen></widget>
+  </config> 
+</widget>

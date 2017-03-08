@@ -70,9 +70,9 @@ function loginEMMForeground(loginData) {
                 } else {
                     appcan.setLocVal("loginPass", '');
                 }
-                if(uexMDM){
-                    uexMDM.login();
-                }
+                // if(uexMDM){
+                    // uexMDM.login();
+                // }
                 /**
                  * 缓存数据
                  */

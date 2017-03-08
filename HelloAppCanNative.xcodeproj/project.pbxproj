@@ -7,14 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		423DBD181E693939004F8BAB /* AppCanEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F18C241E28DA1700A20E2A /* AppCanEngine.framework */; };
-		423DBD191E693939004F8BAB /* AppCanEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42F18C241E28DA1700A20E2A /* AppCanEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		423DBD1A1E693939004F8BAB /* AppCanKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F18C251E28DA1700A20E2A /* AppCanKit.framework */; };
-		423DBD1B1E693939004F8BAB /* AppCanKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42F18C251E28DA1700A20E2A /* AppCanKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		423DBD1C1E693939004F8BAB /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F18C271E28DA1700A20E2A /* pop.framework */; };
-		423DBD1D1E693939004F8BAB /* pop.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42F18C271E28DA1700A20E2A /* pop.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		423DBD1E1E693939004F8BAB /* Ono.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F18C261E28DA1700A20E2A /* Ono.framework */; };
-		423DBD1F1E693939004F8BAB /* Ono.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42F18C261E28DA1700A20E2A /* Ono.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		423DBD2C1E693DCA004F8BAB /* uexAppStoreMgr.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 423DBD251E693DCA004F8BAB /* uexAppStoreMgr.bundle */; };
 		423DBD2D1E693DCA004F8BAB /* uexControl.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 423DBD261E693DCA004F8BAB /* uexControl.bundle */; };
 		423DBD2E1E693DCA004F8BAB /* uexDataAnalysis.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 423DBD271E693DCA004F8BAB /* uexDataAnalysis.bundle */; };
@@ -22,7 +14,6 @@
 		423DBD301E693DCA004F8BAB /* uexFileMgr.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 423DBD291E693DCA004F8BAB /* uexFileMgr.bundle */; };
 		423DBD311E693DCA004F8BAB /* uexMDM.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 423DBD2A1E693DCA004F8BAB /* uexMDM.bundle */; };
 		423DBD321E693DCA004F8BAB /* uexXmlHttpMgr.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 423DBD2B1E693DCA004F8BAB /* uexXmlHttpMgr.bundle */; };
-		423DBD3E1E693DD7004F8BAB /* libuexAppStoreMgr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 423DBD331E693DD7004F8BAB /* libuexAppStoreMgr.a */; };
 		423DBD3F1E693DD7004F8BAB /* libuexControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 423DBD341E693DD7004F8BAB /* libuexControl.a */; };
 		423DBD401E693DD7004F8BAB /* libuexDataAnalysis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 423DBD351E693DD7004F8BAB /* libuexDataAnalysis.a */; };
 		423DBD411E693DD7004F8BAB /* libuexDevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 423DBD361E693DD7004F8BAB /* libuexDevice.a */; };
@@ -34,7 +25,20 @@
 		423DBD481E693DD7004F8BAB /* libuexXmlHttpMgr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 423DBD3D1E693DD7004F8BAB /* libuexXmlHttpMgr.a */; };
 		423DBD4A1E693DE6004F8BAB /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423DBD491E693DE6004F8BAB /* AFNetworking.framework */; };
 		426F20161E6D44CA0004CB34 /* WidgetOnePseudoDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 426F20151E6D44CA0004CB34 /* WidgetOnePseudoDelegate.m */; };
-		42B3D4461E6E41FE00F215B3 /* libuexEMM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B3D4451E6E41FE00F215B3 /* libuexEMM.a */; };
+		42B3D4861E6FA55700F215B3 /* AppCanEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B3D4821E6FA55700F215B3 /* AppCanEngine.framework */; };
+		42B3D4871E6FA55700F215B3 /* AppCanKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B3D4831E6FA55700F215B3 /* AppCanKit.framework */; };
+		42B3D4881E6FA55700F215B3 /* Ono.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B3D4841E6FA55700F215B3 /* Ono.framework */; };
+		42B3D4891E6FA55700F215B3 /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B3D4851E6FA55700F215B3 /* pop.framework */; };
+		42B3D48C1E6FA58B00F215B3 /* libuexAppStoreMgr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B3D48A1E6FA58B00F215B3 /* libuexAppStoreMgr.a */; };
+		42B3D48D1E6FA58B00F215B3 /* libuexEMM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B3D48B1E6FA58B00F215B3 /* libuexEMM.a */; };
+		42B3D48E1E6FA59100F215B3 /* AppCanEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B3D4821E6FA55700F215B3 /* AppCanEngine.framework */; };
+		42B3D48F1E6FA59100F215B3 /* AppCanEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42B3D4821E6FA55700F215B3 /* AppCanEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42B3D4901E6FA59100F215B3 /* AppCanKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B3D4831E6FA55700F215B3 /* AppCanKit.framework */; };
+		42B3D4911E6FA59100F215B3 /* AppCanKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42B3D4831E6FA55700F215B3 /* AppCanKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42B3D4921E6FA59100F215B3 /* Ono.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B3D4841E6FA55700F215B3 /* Ono.framework */; };
+		42B3D4931E6FA59100F215B3 /* Ono.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42B3D4841E6FA55700F215B3 /* Ono.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42B3D4941E6FA59100F215B3 /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B3D4851E6FA55700F215B3 /* pop.framework */; };
+		42B3D4951E6FA59100F215B3 /* pop.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42B3D4851E6FA55700F215B3 /* pop.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		42D44D011E6D64DC00BC0B8E /* Beqtucontent.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D44D001E6D64DC00BC0B8E /* Beqtucontent.m */; };
 		42F18B2C1E28BF6800A20E2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F18B2B1E28BF6800A20E2A /* main.m */; };
 		42F18B2F1E28BF6800A20E2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F18B2E1E28BF6800A20E2A /* AppDelegate.m */; };
@@ -54,10 +58,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				423DBD1B1E693939004F8BAB /* AppCanKit.framework in Embed Frameworks */,
-				423DBD1F1E693939004F8BAB /* Ono.framework in Embed Frameworks */,
-				423DBD1D1E693939004F8BAB /* pop.framework in Embed Frameworks */,
-				423DBD191E693939004F8BAB /* AppCanEngine.framework in Embed Frameworks */,
+				42B3D4951E6FA59100F215B3 /* pop.framework in Embed Frameworks */,
+				42B3D4911E6FA59100F215B3 /* AppCanKit.framework in Embed Frameworks */,
+				42B3D48F1E6FA59100F215B3 /* AppCanEngine.framework in Embed Frameworks */,
+				42B3D4931E6FA59100F215B3 /* Ono.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,12 +76,10 @@
 		423DBD291E693DCA004F8BAB /* uexFileMgr.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = uexFileMgr.bundle; sourceTree = "<group>"; };
 		423DBD2A1E693DCA004F8BAB /* uexMDM.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = uexMDM.bundle; sourceTree = "<group>"; };
 		423DBD2B1E693DCA004F8BAB /* uexXmlHttpMgr.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = uexXmlHttpMgr.bundle; sourceTree = "<group>"; };
-		423DBD331E693DD7004F8BAB /* libuexAppStoreMgr.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libuexAppStoreMgr.a; sourceTree = "<group>"; };
 		423DBD341E693DD7004F8BAB /* libuexControl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libuexControl.a; sourceTree = "<group>"; };
 		423DBD351E693DD7004F8BAB /* libuexDataAnalysis.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libuexDataAnalysis.a; sourceTree = "<group>"; };
 		423DBD361E693DD7004F8BAB /* libuexDevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libuexDevice.a; sourceTree = "<group>"; };
 		423DBD371E693DD7004F8BAB /* libuexDownloaderMgr.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libuexDownloaderMgr.a; sourceTree = "<group>"; };
-		423DBD381E693DD7004F8BAB /* libuexEMM.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libuexEMM.a; sourceTree = "<group>"; };
 		423DBD391E693DD7004F8BAB /* libuexFileMgr.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libuexFileMgr.a; sourceTree = "<group>"; };
 		423DBD3A1E693DD7004F8BAB /* libuexMDM.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libuexMDM.a; sourceTree = "<group>"; };
 		423DBD3B1E693DD7004F8BAB /* libuexToast.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libuexToast.a; sourceTree = "<group>"; };
@@ -86,7 +88,12 @@
 		423DBD491E693DE6004F8BAB /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = "<group>"; };
 		426F20141E6D44CA0004CB34 /* WidgetOnePseudoDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidgetOnePseudoDelegate.h; sourceTree = "<group>"; };
 		426F20151E6D44CA0004CB34 /* WidgetOnePseudoDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WidgetOnePseudoDelegate.m; sourceTree = "<group>"; };
-		42B3D4451E6E41FE00F215B3 /* libuexEMM.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libuexEMM.a; path = "../ios-plugin-uexEMM/EUExEMM/uexEMM/libuexEMM.a"; sourceTree = "<group>"; };
+		42B3D4821E6FA55700F215B3 /* AppCanEngine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCanEngine.framework; sourceTree = "<group>"; };
+		42B3D4831E6FA55700F215B3 /* AppCanKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCanKit.framework; sourceTree = "<group>"; };
+		42B3D4841E6FA55700F215B3 /* Ono.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Ono.framework; sourceTree = "<group>"; };
+		42B3D4851E6FA55700F215B3 /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = pop.framework; sourceTree = "<group>"; };
+		42B3D48A1E6FA58B00F215B3 /* libuexAppStoreMgr.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libuexAppStoreMgr.a; sourceTree = "<group>"; };
+		42B3D48B1E6FA58B00F215B3 /* libuexEMM.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libuexEMM.a; sourceTree = "<group>"; };
 		42D44CFF1E6D64DC00BC0B8E /* Beqtucontent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Beqtucontent.h; sourceTree = "<group>"; };
 		42D44D001E6D64DC00BC0B8E /* Beqtucontent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Beqtucontent.m; sourceTree = "<group>"; };
 		42F18B271E28BF6800A20E2A /* HelloAppCanNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloAppCanNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,10 +111,6 @@
 		42F18B5E1E28C88400A20E2A /* widget */ = {isa = PBXFileReference; lastKnownFileType = folder; path = widget; sourceTree = "<group>"; };
 		42F18B601E28C88B00A20E2A /* plugin.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = plugin.xml; sourceTree = "<group>"; };
 		42F18C0E1E28D79100A20E2A /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
-		42F18C241E28DA1700A20E2A /* AppCanEngine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCanEngine.framework; path = "../../../Library/Developer/Xcode/DerivedData/AppCanEngine-ecbukyozlaqyzvebwalhktxntsal/Build/Products/Debug-iphoneos/AppCanEngine.framework"; sourceTree = "<group>"; };
-		42F18C251E28DA1700A20E2A /* AppCanKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCanKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/AppCanEngine-ecbukyozlaqyzvebwalhktxntsal/Build/Products/Debug-iphoneos/AppCanKit.framework"; sourceTree = "<group>"; };
-		42F18C261E28DA1700A20E2A /* Ono.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ono.framework; path = "../../../Library/Developer/Xcode/DerivedData/AppCanEngine-ecbukyozlaqyzvebwalhktxntsal/Build/Products/Debug-iphoneos/Ono.framework"; sourceTree = "<group>"; };
-		42F18C271E28DA1700A20E2A /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pop.framework; path = "../../../Library/Developer/Xcode/DerivedData/AppCanEngine-ecbukyozlaqyzvebwalhktxntsal/Build/Products/Debug-iphoneos/pop.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,22 +118,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42B3D4461E6E41FE00F215B3 /* libuexEMM.a in Frameworks */,
 				423DBD4A1E693DE6004F8BAB /* AFNetworking.framework in Frameworks */,
 				423DBD471E693DD7004F8BAB /* libuexUploaderMgr.a in Frameworks */,
+				42B3D48D1E6FA58B00F215B3 /* libuexEMM.a in Frameworks */,
 				423DBD451E693DD7004F8BAB /* libuexMDM.a in Frameworks */,
-				423DBD1E1E693939004F8BAB /* Ono.framework in Frameworks */,
+				42B3D48C1E6FA58B00F215B3 /* libuexAppStoreMgr.a in Frameworks */,
 				423DBD401E693DD7004F8BAB /* libuexDataAnalysis.a in Frameworks */,
 				423DBD421E693DD7004F8BAB /* libuexDownloaderMgr.a in Frameworks */,
 				423DBD441E693DD7004F8BAB /* libuexFileMgr.a in Frameworks */,
-				423DBD181E693939004F8BAB /* AppCanEngine.framework in Frameworks */,
-				423DBD1C1E693939004F8BAB /* pop.framework in Frameworks */,
+				42B3D4871E6FA55700F215B3 /* AppCanKit.framework in Frameworks */,
+				42B3D4881E6FA55700F215B3 /* Ono.framework in Frameworks */,
+				42B3D4901E6FA59100F215B3 /* AppCanKit.framework in Frameworks */,
+				42B3D4921E6FA59100F215B3 /* Ono.framework in Frameworks */,
+				42B3D4941E6FA59100F215B3 /* pop.framework in Frameworks */,
+				42B3D4891E6FA55700F215B3 /* pop.framework in Frameworks */,
 				423DBD461E693DD7004F8BAB /* libuexToast.a in Frameworks */,
 				423DBD481E693DD7004F8BAB /* libuexXmlHttpMgr.a in Frameworks */,
-				423DBD3E1E693DD7004F8BAB /* libuexAppStoreMgr.a in Frameworks */,
 				423DBD3F1E693DD7004F8BAB /* libuexControl.a in Frameworks */,
 				423DBD411E693DD7004F8BAB /* libuexDevice.a in Frameworks */,
-				423DBD1A1E693939004F8BAB /* AppCanKit.framework in Frameworks */,
+				42B3D4861E6FA55700F215B3 /* AppCanEngine.framework in Frameworks */,
+				42B3D48E1E6FA59100F215B3 /* AppCanEngine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,12 +173,12 @@
 		423DBD231E693DBA004F8BAB /* Static Libs */ = {
 			isa = PBXGroup;
 			children = (
-				423DBD331E693DD7004F8BAB /* libuexAppStoreMgr.a */,
+				42B3D48A1E6FA58B00F215B3 /* libuexAppStoreMgr.a */,
+				42B3D48B1E6FA58B00F215B3 /* libuexEMM.a */,
 				423DBD341E693DD7004F8BAB /* libuexControl.a */,
 				423DBD351E693DD7004F8BAB /* libuexDataAnalysis.a */,
 				423DBD361E693DD7004F8BAB /* libuexDevice.a */,
 				423DBD371E693DD7004F8BAB /* libuexDownloaderMgr.a */,
-				423DBD381E693DD7004F8BAB /* libuexEMM.a */,
 				423DBD391E693DD7004F8BAB /* libuexFileMgr.a */,
 				423DBD3A1E693DD7004F8BAB /* libuexMDM.a */,
 				423DBD3B1E693DD7004F8BAB /* libuexToast.a */,
@@ -249,11 +256,6 @@
 		42F18C0D1E28D79100A20E2A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				42B3D4451E6E41FE00F215B3 /* libuexEMM.a */,
-				42F18C241E28DA1700A20E2A /* AppCanEngine.framework */,
-				42F18C251E28DA1700A20E2A /* AppCanKit.framework */,
-				42F18C261E28DA1700A20E2A /* Ono.framework */,
-				42F18C271E28DA1700A20E2A /* pop.framework */,
 				42F18C0E1E28D79100A20E2A /* libxml2.tbd */,
 			);
 			name = Frameworks;
@@ -262,6 +264,10 @@
 		42F18C9A1E28E05500A20E2A /* uexEngine */ = {
 			isa = PBXGroup;
 			children = (
+				42B3D4821E6FA55700F215B3 /* AppCanEngine.framework */,
+				42B3D4831E6FA55700F215B3 /* AppCanKit.framework */,
+				42B3D4841E6FA55700F215B3 /* Ono.framework */,
+				42B3D4851E6FA55700F215B3 /* pop.framework */,
 			);
 			path = uexEngine;
 			sourceTree = "<group>";
@@ -473,6 +479,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = MMWCPWYKS6;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -487,9 +494,13 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/HelloAppCanNative/uexPlugins",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.appcan.HelloAppCanNative;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appcan.poc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Debug;
 		};
@@ -497,6 +508,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = MMWCPWYKS6;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -511,9 +523,13 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/HelloAppCanNative/uexPlugins",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.appcan.HelloAppCanNative;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appcan.poc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Release;
 		};

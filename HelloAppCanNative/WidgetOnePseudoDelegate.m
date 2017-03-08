@@ -46,7 +46,7 @@
         self.useAppCanUpdateURL = @"";
         self.signVerifyControl = NO;
         self.useAppCanEMMTenantID = @"zyyd";
-        self.useAppCanAppStoreHost = @"http://124.193.176.35:11080/v4q";
+        self.useAppCanAppStoreHost = @"http://124.193.176.35:11080/v4/";
         self.useAppCanMBaaSHost = @"";
         self.useAppCanIMXMPPHost = @"";
         self.useAppCanIMHTTPHost = @"";
