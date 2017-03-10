@@ -19,6 +19,7 @@
 
 
 
+
 //协议路径
 #define F_HTTP_PATH			@"http://"
 #define F_HTTPS_PATH		@"https://"
@@ -115,7 +116,7 @@ void ACENSLog (NSString *format, ...);
 //+(BOOL)isPhoneNumber:(NSString*)inPhoneNum;
 +(int)getScreenWidth;
 +(int)getScreenHeight;
-+(CGRect)getApplicationInitFrame;
++ (CGRect)getApplicationInitFrame;
 +(NSString*)getScreenWAndH;
 +(float)getSystemVersion;
 +(BOOL)isIpad;

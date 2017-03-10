@@ -10,7 +10,8 @@
 #import <AppCanEngine/AppCanEngine.h>
 #import <AppCanKit/AppCanKit.h>
 #import "AppCanConfiguration.h"
-@interface AppDelegate ()
+#import <UserNotifications/UserNotifications.h>
+@interface AppDelegate ()<UNUserNotificationCenterDelegate>
 
 @end
 
@@ -29,8 +30,9 @@
     self.window.rootViewController = AppCanEngine.mainWidgetController;
     [self.window makeKeyAndVisible];
     
-    WidgetOneDelegate *theApp = (WidgetOneDelegate *)[UIApplication sharedApplication].delegate;
-    ACLogError(@"%@",theApp.useAppCanMAMURL);
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 10) {
+        [UNUserNotificationCenter currentNotificationCenter].delegate = self;
+    }
     return [AppCanEngine application:application didFinishLaunchingWithOptions:launchOptions];
 }
 
@@ -65,4 +67,77 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     [AppCanEngine applicationWillTerminate:application];
 }
+
+
+- (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)())completionHandler{
+    [AppCanEngine application:application handleEventsForBackgroundURLSession:identifier completionHandler:completionHandler];
+    
+    
+}
+
+
+
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void(^)(NSArray * __nullable restorableObjects))restorationHandler{
+    return [AppCanEngine application:application continueUserActivity:userActivity restorationHandler:restorationHandler];
+    
+}
+
+
+- (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    
+    [AppCanEngine application:app didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+    
+}
+
+
+- (void)application:(UIApplication *)app didFailToRegisterForRemoteNotificationsWithError:(NSError *)err {
+    
+    [AppCanEngine application:app didFailToRegisterForRemoteNotificationsWithError:err];
+    
+}
+
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+    
+    [AppCanEngine application:application didReceiveRemoteNotification:userInfo fetchCompletionHandler:completionHandler];
+    
+}
+
+
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    [AppCanEngine application:application didReceiveRemoteNotification:userInfo];
+}
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+    
+    [AppCanEngine application:application didReceiveLocalNotification:notification];
+    
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    return [AppCanEngine application:application handleOpenURL:url];
+    
+}
+
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    return [AppCanEngine application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+}
+
+#pragma mark - UNUserNotificationCenterDelegate
+
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center
+       willPresentNotification:(UNNotification *)notification
+         withCompletionHandler:(void (^)(UNNotificationPresentationOptions))completionHandler{
+    
+    [AppCanEngine userNotificationCenter:center willPresentNotification:notification withCompletionHandler:completionHandler];
+    
+}
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)())completionHandler{
+    
+    [AppCanEngine userNotificationCenter:center didReceiveNotificationResponse:response withCompletionHandler:completionHandler];
+    
+}
+
+
 @end

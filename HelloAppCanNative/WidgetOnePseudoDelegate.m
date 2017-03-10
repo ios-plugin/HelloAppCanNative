@@ -33,9 +33,12 @@
         self.useCloseAppWithJaibroken = NO;
         self.useRC4EncryptWithLocalstorage = YES;
         self.useUpdateWgtHtmlControl = YES;
-        self.useStartReportURL = @"http://124.193.176.35:11080/v4/";
-        self.useAnalysisDataURL = @"http://124.193.176.35:11080/analyIn/4.0/service/";
-        self.useBindUserPushURL = @"http://124.193.176.35:11080/gateway/";
+//        self.useStartReportURL = @"http://124.193.176.35:11080/v4/";
+//        self.useAnalysisDataURL = @"http://124.193.176.35:11080/analyIn/4.0/service/";
+//        self.useBindUserPushURL = @"http://124.193.176.35:11080/gateway/";
+        self.useStartReportURL = @"https://g.appcan.cn/v4/";
+        self.useAnalysisDataURL = @"https://g.appcan.cn/analyIn/4.0/service/";
+        self.useBindUserPushURL = @"https://g.appcan.cn/gateway/";
         self.useAppCanMAMURL = @"http://192.168.1.140:8080/mam/";
         self.useAppCanMCMURL = @"http://192.168.1.183:8443/mcmIn/";
         self.useAppCanMDMURL = @"http://192.168.1.183:8443/mdmIn/";
@@ -45,8 +48,10 @@
         self.useIsHiddenStatusBarControl = NO;
         self.useAppCanUpdateURL = @"";
         self.signVerifyControl = NO;
+        
         self.useAppCanEMMTenantID = @"zyyd";
-        self.useAppCanAppStoreHost = @"http://124.193.176.35:11080/v4/";
+//        self.useAppCanAppStoreHost = @"http://124.193.176.35:11080/v4/";
+        self.useAppCanAppStoreHost = @"https://g.appcan.cn/v4/";
         self.useAppCanMBaaSHost = @"";
         self.useAppCanIMXMPPHost = @"";
         self.useAppCanIMHTTPHost = @"";
@@ -56,5 +61,6 @@
 	}
 	return self;
 }
+
 
 @end
